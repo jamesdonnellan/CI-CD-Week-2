@@ -25,4 +25,11 @@ public class RequestController
     {
         return "Name: " + name + ", Age: " + age;
     }
+
+    //Adding  anew endpoint for Person
+    @GetMapping("/person")
+    public Person getPerson()
+    {
+        return new Person("Aaron", 20);
+    }
 }
