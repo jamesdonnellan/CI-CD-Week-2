@@ -1,5 +1,6 @@
 package ie.atu.week2;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,5 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class RequestController
 {
-
+    @GetMapping("/Hello")
+    public String hello()
+    {
+         return "Hello";
+    }
 }
